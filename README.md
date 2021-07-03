@@ -2,7 +2,7 @@
 
 To decrease cyclomatic complexity
 
-### Before
+## Positive Case, Before
 
 ```cpp
 if (expression) {
@@ -10,7 +10,7 @@ if (expression) {
 }
 ```
 
-### After
+## Positive Case, After
 
 ```cpp
 #include "truth.hpp"
@@ -20,7 +20,7 @@ algorithm::when(expression, []() { /* Something you want to do */ });
 
 or
 
-### Before
+## Negative Case, Before
 
 ```cpp
 if (!expression) {
@@ -28,7 +28,7 @@ if (!expression) {
 }
 ```
 
-### After
+## Negative Case, After
 
 ```cpp
 #include "truth.hpp"
